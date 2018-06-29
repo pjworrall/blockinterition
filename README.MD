@@ -15,3 +15,22 @@ _Blank Nodes_
 
 I was thinking of using blank nodes for the instances of blocks but chose to define a uri pattern with
 the block number placed at the fragements/named anchor .
+
+**Tools**
+
+_ETL_
+
+To produce the CSV input files we referred to:
+
+https://medium.com/@medvedev1088/exporting-and-analyzing-ethereum-blockchain-f5353414a94e
+https://medium.com/@medvedev1088/converting-ethereum-etl-files-to-parquet-399e048ddd30
+https://github.com/medvedev1088/ethereum-etl
+
+**Ontology**
+
+https://media.consensys.net/ethon-introducing-semantic-ethereum-15f1f0696986
+
+**Notes**
+
+Git is ignoring the data folder where the input files need to be. Too big to be checking into git.
+The location of the chaindata CSV files from the exports is crudely hard coded in the Javascript files.

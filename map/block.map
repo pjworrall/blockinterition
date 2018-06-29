@@ -1,16 +1,18 @@
-<http://rdf.interition.net/mainnet#{{block_number}}> a e:Block.
-<http://rdf.interition.net/mainnet#{{block_number}}> e:number "{{block_number}}"^^xsd:integer ;
+<http://rdf.interition.net/mainnet/block#{{block_number}}> a e:Block.
+
+<http://rdf.interition.net/mainnet/block#{{block_number}}> e:number "{{block_number}}"^^xsd:integer ;
     e:blockHash "{{block_hash}}"^^xsd:hexBinary ;
     e:hasParentBlock <http://ethereum/mainnet/{{block_parent_hash}}> .
-<http://rdf.interition.net/mainnet#{{block_number}}> e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary ;
+
+<http://rdf.interition.net/mainnet/block#{{block_number}}> e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary ;
     e:knowsOfUncle <http://ethereum/mainnet/{{block_sha3_uncles}}> ;
     e:blockLogsBloom "{{block_logs_bloom}}"^^xsd:hexBinary ;
     e:hasTxTrie <http://ethereum/mainnet/{{block_transactions_root}} ;
-    e:hasPostBlockState :s1  .
+    e:hasPostBlockState <http://rdf.interition.net/mainnet/state#{{block_state_root}}  .
 
-:s1 e:stateRoot "{{block_state_root}}"^^xsd:hexBinary .
+<http://rdf.interition.net/mainnet/state#{{block_state_root}} e:stateRoot "{{block_state_root}}"^^xsd:hexBinary .
      
-<http://rdf.interition.net/mainnet#{{block_number}}> e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary ;
+<http://rdf.interition.net/mainnet/block#{{block_number}}> e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary ;
     e:blockSize "{{block_size}}"^^xsd:integer ;
     e:blockExtraData  "{{block_extra_data}}"^^xsd:hexBinary ;
     e:blockGasLimit  "{{block_gas_limit}}"^^xsd:integer ;
