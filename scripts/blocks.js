@@ -5,9 +5,9 @@ const parse = require('csv-parse');
 const readline = require('readline');
 const stream = require('stream');
 
-const chaindata = '/Users/pjworrall/Documents/BlockInterition/data/output/blocks/start_block=04900000/end_block=04999999/blocks_04900000_04999999.csv';
+const chaindata = '../data/output/blocks/start_block=04900000/end_block=04999999/blocks_04900000_04999999.csv';
 
-const templatefile = '/Users/pjworrall/Documents/BlockInterition/map/block.map';
+const templatefile = '../map/block.map';
 
 fs.readFile(templatefile, 'utf8', function (err,data) {
     if (err) {
