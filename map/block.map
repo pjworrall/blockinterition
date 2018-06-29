@@ -1,24 +1,20 @@
-:b1 a e:Block.
-:b1 e:number "{{block_number}}"^^xsd:integer ;
+<http://rdf.interition.net/mainnet#{{block_number}}> a e:Block.
+<http://rdf.interition.net/mainnet#{{block_number}}> e:number "{{block_number}}"^^xsd:integer ;
     e:blockHash "{{block_hash}}"^^xsd:hexBinary ;
     e:hasParentBlock <http://ethereum/mainnet/{{block_parent_hash}}> .
-:b1 e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary ;
+<http://rdf.interition.net/mainnet#{{block_number}}> e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary ;
     e:knowsOfUncle <http://ethereum/mainnet/{{block_sha3_uncles}}> ;
     e:blockLogsBloom "{{block_logs_bloom}}"^^xsd:hexBinary ;
-    e:hasTxTrie <http://ethereum/mainnet/{{block_transactions_root}} ; // maybe a blank node with a property of txRoot?
+    e:hasTxTrie <http://ethereum/mainnet/{{block_transactions_root}} ;
     e:hasPostBlockState :s1  .
 
 :s1 e:stateRoot "{{block_state_root}}"^^xsd:hexBinary .
-
-block_miner // not found
      
-:b1 e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary ;
+<http://rdf.interition.net/mainnet#{{block_number}}> e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary ;
     e:blockSize "{{block_size}}"^^xsd:integer ;
     e:blockExtraData  "{{block_extra_data}}"^^xsd:hexBinary ;
     e:blockGasLimit  "{{block_gas_limit}}"^^xsd:integer ;
     e:blockGasUsed  "{{block_gas_used}}"^^xsd:integer   ;
     e:blockCreationTime "{{block_timestamp}}"xsd:dateTime .
 
-block_total_difficulty // not found
 
-block_transaction_count // not found
