@@ -1,0 +1,24 @@
+{
+  "name": "blockinterition",
+  "version": "0.0.1",
+  "description": "Knowledge Tier over Ethereum blockchain using W3C Semantics/RDF/SPARQL ",
+  "main": "index.js",
+  "dependencies": {
+    "csv-parse": "^2.5.0",
+    "handlebars": "^4.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "ethon",
+    "semantic",
+    "RDF",
+    "SPARQL"
+  ],
+  "author": "Paul Worrall <paul.worrall@interition.net> (https://uk.linkedin.com/in/worrall)",
+  "license": "MIT"
+}
