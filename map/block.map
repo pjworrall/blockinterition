@@ -1,22 +1,23 @@
-<http://rdf.interition.net/mainnet/block#{{block_number}}> a e:Block.
 
-<http://rdf.interition.net/mainnet/block#{{block_number}}> e:number "{{block_number}}"^^xsd:integer ;
-    e:blockHash "{{block_hash}}"^^xsd:hexBinary ;
-    e:hasParentBlock <http://ethereum/mainnet/{{block_parent_hash}}> .
 
-<http://rdf.interition.net/mainnet/block#{{block_number}}> e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary ;
-    e:knowsOfUncle <http://ethereum/mainnet/{{block_sha3_uncles}}> ;
-    e:blockLogsBloom "{{block_logs_bloom}}"^^xsd:hexBinary ;
-    e:hasTxTrie <http://ethereum/mainnet/{{block_transactions_root}} ;
-    e:hasPostBlockState <http://rdf.interition.net/mainnet/state#{{block_state_root}}  .
+ibb:{{block_number}} a e:Block.
 
-<http://rdf.interition.net/mainnet/state#{{block_state_root}} e:stateRoot "{{block_state_root}}"^^xsd:hexBinary .
+ibb:{{block_number}}   e:number "{{block_number}}"^^xsd:integer .
+ibb:{{block_number}}    e:blockHash "{{block_hash}}"^^xsd:hexBinary .
+ibb:{{block_number}}    e:hasParentBlock ibb:{{block_parent_hash}} .
+
+ibb:{{block_number}}    e:block_nonce    "{{block_nonce}}"^^xsd:hexBinary .
+ibb:{{block_number}}    e:knowsOfUncle ibu:{{block_sha3_uncles}} .
+ibb:{{block_number}}    e:blockLogsBloom "{{block_logs_bloom}}"^^xsd:hexBinary .
+ibb:{{block_number}}    e:hasTxTrie ibtx:{{block_transactions_root}} .
+ibb:{{block_number}}    e:hasPostBlockState ibs:{{block_state_root}}  .
+
+ibs:{{block_state_root}} e:stateRoot "{{block_state_root}}"^^xsd:hexBinary .
      
-<http://rdf.interition.net/mainnet/block#{{block_number}}> e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary ;
-    e:blockSize "{{block_size}}"^^xsd:integer ;
-    e:blockExtraData  "{{block_extra_data}}"^^xsd:hexBinary ;
-    e:blockGasLimit  "{{block_gas_limit}}"^^xsd:integer ;
-    e:blockGasUsed  "{{block_gas_used}}"^^xsd:integer   ;
-    e:blockCreationTime "{{block_timestamp}}"xsd:dateTime .
-
+ibb:{{block_number}}    e:blockDifficulty "{{block_difficulty}}"^^xsd:hexBinary .
+ibb:{{block_number}}    e:blockSize "{{block_size}}"^^xsd:integer .
+ibb:{{block_number}}    e:blockExtraData  "{{block_extra_data}}"^^xsd:hexBinary .
+ibb:{{block_number}}    e:blockGasLimit  "{{block_gas_limit}}"^^xsd:integer .
+ibb:{{block_number}}    e:blockGasUsed  "{{block_gas_used}}"^^xsd:integer   .
+ibb:{{block_number}}   e:blockCreationTime "{{block_timestamp}}"xsd:dateTime .
 
