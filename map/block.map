@@ -19,5 +19,5 @@ ibb:{{block_number}}    e:blockSize "{{block_size}}"^^xsd:integer .
 ibb:{{block_number}}    e:blockExtraData  "{{block_extra_data}}"^^xsd:hexBinary .
 ibb:{{block_number}}    e:blockGasLimit  "{{block_gas_limit}}"^^xsd:integer .
 ibb:{{block_number}}    e:blockGasUsed  "{{block_gas_used}}"^^xsd:integer   .
-ibb:{{block_number}}   e:blockCreationTime "{{block_timestamp}}"xsd:dateTime .
+ibb:{{block_number}}   e:blockCreationTime "{{block_timestamp}}"^^xsd:dateTime .
 
