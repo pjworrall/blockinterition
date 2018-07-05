@@ -1,5 +1,7 @@
 **Exploring use of Ontologies with the Ethereum Blockchain**
 
+The main objective here is to get some SPARQL queries that help to understanding an applications implementation on the Ethereum blockchain and link its meaning with off chain concepts to get an end-to-end view.
+
 **Issues**
 
 _Missing Attributes_
