@@ -1,3 +1,3 @@
 #!/bin/bash
 
-arq --data=../data/example.ttl --query=./$1
+arq --data=../data/output/blocks.ttl --query=./$1

@@ -5,7 +5,7 @@ const parse = require('csv-parse');
 const readline = require('readline');
 const stream = require('stream');
 
-const chaindata = '../data/blocks.csv';
+const chaindata = '../data/input/summary/blocks.csv';
 
 const templatefile = '../map/block.map';
 

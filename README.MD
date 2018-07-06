@@ -2,6 +2,36 @@
 
 The main objective here is to get some SPARQL queries that help to understand a distributed applications implementation on the Ethereum blockchain and make it possible to link it with off chain concepts for an end-to-end view.
 
+**Prerequisites**
+
+
+Node.js v9.5.0 (should work with current version from https://nodejs.org/en/)
+
+BlockInterition (this project) (git clone https://github.com/pjworrall/blockinterition.git) 
+
+Apache Jena 3.7.0 [ARQ] (https://jena.apache.org/)
+
+
+**Usage**
+
+% cd scripts
+% node blocks.js
+
+\# Output goes to standard out (redirect it to  data/output/blocks.ttl)
+
+% node blocks.js > ../tmp/blocks.ttl
+
+% cd ..
+
+% cat  data/headers.ttl tmp/blocks.ttl > data/output/blocks.ttl
+
+% cd tests
+
+./query.sh [sparql.qr]
+
+% ./query.sh blocks.qr
+
+
 **Issues**
 
 _Missing Attributes_
