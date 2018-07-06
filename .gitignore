@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
-tmp
+tmp/*
 data/input/etl
+data/output
 node_modules
