@@ -5,5 +5,7 @@
 @prefix ibu: <http://knowledge.interition.net/ethereum/mainnet/state#> .
 @prefix ibtx: <http://knowledge.interition.net/ethereum/mainnet/block_tx_root#> .
 
+@prefix tx: <http://knowledge.interition.net/ethereum/mainnet/tx#> .
+
 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .

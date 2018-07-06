@@ -1,0 +1,21 @@
+
+ibb:{{tx_block_number}} :containsTx tx:{{tx_hash}} .
+
+tx:{{tx_hash}} :txIndex {{tx_index}}^^xsd:hexBinary .
+
+{{tx_hash}}
+{{tx_nonce}}
+
+{{tx_block_hash}}
+
+{{tx_block_number}}
+
+{{tx_index}}
+{{tx_from}}
+{{tx_to}}
+
+{{tx_value}}
+{{tx_gas}}
+{{tx_gas_price}}
+
+{{tx_input}}
