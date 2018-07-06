@@ -50,11 +50,13 @@ _Missing Attributes_
 
 These attributes are in the chain data export but were not found in the model:
 
-block_total_difficulty 
-block_transaction_count
-block_miner
+1. block_total_difficulty 
+2. block_transaction_count
+3. block_miner
 
-(block_number,block_hash,block_parent_hash,block_nonce,block_sha3_uncles,block_logs_bloom,block_transactions_root,block_state_root,block_miner,block_difficulty,block_total_difficulty,block_size,block_extra_data,block_gas_limit,block_gas_used,block_timestamp,block_transaction_count)
+The CSV file from the ETC has the following columns:
+
+block_number,block_hash,block_parent_hash,block_nonce,block_sha3_uncles,block_logs_bloom,block_transactions_root,block_state_root,block_miner,block_difficulty,block_total_difficulty,block_size,block_extra_data,block_gas_limit,block_gas_used,block_timestamp,block_transaction_count
 
 
 _Blank Nodes_
