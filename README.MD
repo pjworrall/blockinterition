@@ -2,6 +2,15 @@
 
 The main objective here is to get some SPARQL queries that help to understand a distributed applications implementation on the Ethereum blockchain and make it possible to link it with off chain concepts for an end-to-end view.
 
+**Documentation**
+
+Go and subscribe to the [Interition Youtube channel](https://www.youtube.com/user/interition?sub_confirmation=1) to get regular instructional material
+
+VLOG 17: [Querying the Ethereum Blockchain using the EthOn Ontology](https://www.youtube.com/watch?v=ETcEs_affho&t=1011s)
+
+VLOG 19: Interpreting the EthOn Ontology using SPARQL - TBD
+
+
 **Prerequisites**
 
 
@@ -9,7 +18,7 @@ Node.js v9.5.0 (should work with current version from https://nodejs.org/en/)
 
 BlockInterition (this project) (git clone https://github.com/pjworrall/blockinterition.git) 
 
-Apache Jena 3.7.0 [ARQ] (https://jena.apache.org/)
+Apache Jena 3.7.0 [ARQ](https://jena.apache.org/)
 
 
 **Usage**
@@ -65,7 +74,9 @@ https://github.com/medvedev1088/ethereum-etl
 
 **Ontology**
 
-https://media.consensys.net/ethon-introducing-semantic-ethereum-15f1f0696986
+[Medium Article](https://media.consensys.net/ethon-introducing-semantic-ethereum-15f1f0696986)
+
+[EthOn Ontology](https://github.com/ConsenSys/EthOn)
 
 **Notes**
 
