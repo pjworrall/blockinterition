@@ -40,7 +40,7 @@ To produce triples using the EthOn Ontology for Blocks:
 
 ./query.sh [sparql.qr]
 
-# make sure query.sh is executable (chmod u+x)
+\# make sure query.sh is executable (chmod u+x)
 % ./query.sh blocks.qr
 
 
