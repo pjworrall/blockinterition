@@ -3,11 +3,19 @@ const Handlebars = require('handlebars');
 const fs = require('fs');
 const parse = require('csv-parse');
 const readline = require('readline');
-const stream = require('stream');
+const Stream = require('stream');
 
-const chaindata = '../data/input/fragments/blocks.csv';
+let argv = require('minimist')(process.argv.slice(2));
 
-const templatefile = '../map/block.map';
+if(argv.data === undefined || argv.map === undefined) {
+    console.log("usage: node map --data <input-file> --map <mapping-template-file>");
+    process.exit(1);
+}
+
+// '../data/input/fragments/blocks.csv'
+const chaindata = argv.data;
+// '../map/block.map'
+const templatefile = argv.map;
 
 fs.readFile(templatefile, 'utf8', function (err,data) {
     if (err) {
@@ -24,7 +32,7 @@ function render(source) {
     let template = Handlebars.compile(source);
 
     let instream = fs.createReadStream(chaindata);
-    let outstream = new stream;
+    let outstream = new Stream;
     let rl = readline.createInterface(instream, outstream);
 
     rl.on('line', function(line) {

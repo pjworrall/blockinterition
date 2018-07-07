@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "csv-parse": "^2.5.0",
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {

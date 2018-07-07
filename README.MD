@@ -50,7 +50,9 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd scripts
 
-% node blocks.js > ../tmp/blocks.ttl
+\# usage: node tripleize.js --data=input.csv --map=template.map 
+
+% node tripleize.js --data=../data/input/fragments/blocks.csv --map=../map/block.map ../tmp/blocks.ttl
 
 % cd ..
 
