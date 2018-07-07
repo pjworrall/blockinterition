@@ -50,10 +50,6 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd scripts
 
-% node blocks.js
-
-\# Output goes to standard out (redirect it to  data/output/blocks.ttl)
-
 % node blocks.js > ../tmp/blocks.ttl
 
 % cd ..
