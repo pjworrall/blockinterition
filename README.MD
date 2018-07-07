@@ -50,9 +50,10 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd scripts
 
-\# usage: node tripleize.js --data=input.csv --map=template.map 
+\# usage: node tripleize.js --data <input-file>  --map <mapping-file> --template <template-file>
 
-% node tripleize.js --data=../data/input/fragments/blocks.csv --map=../map/block.map ../tmp/blocks.ttl
+% node tripleize.js --data ../data/input/fragments/blocks.csv --map ../map/block.map --template ../templates/block.tmp 
+
 
 % cd ..
 
@@ -113,6 +114,8 @@ The location of the chaindata CSV files from the exports is crudely hard coded i
 Lexical value of blockCreationTime not valid for datatype XSD dateTime
 
 Write out RDF to a .ttl file
+
+Find out why tx_from, tx_to, tx_value data elements in the etl input have no properties for Tx Classes in EthOn
 
 ---
 

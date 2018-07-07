@@ -8,11 +8,15 @@ PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT   ?class
+SELECT   ?s ?o
 WHERE
 {
 
- ?class a owl:Class .
+    # what Class has a predicate whose range is restricted to a :Tx ?
+    # get the predicate first
+    ?s rdfs:range :Tx .
+
+    ?s rdfs:domain ?o .
 
 
 }
