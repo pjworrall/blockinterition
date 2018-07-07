@@ -6,9 +6,9 @@ The main objective here is to get some SPARQL queries that help to understand a 
 
 Go and subscribe to the [Interition Youtube channel](https://www.youtube.com/user/interition?sub_confirmation=1) to get regular instructional material
 
-VLOG 17: [Querying the Ethereum Blockchain using the EthOn Ontology](https://www.youtube.com/watch?v=ETcEs_affho&t=1011s)
+VLOG 17: [Querying the Ethereum Blockchain using the EthOn Ontology](https://youtu.be/ETcEs_affho?sub_confirmation=1)
 
-VLOG 19: Interpreting the EthOn Ontology using SPARQL - TBD
+VLOG 19: [Materialising EthOn Ontology Transactions](https://youtu.be/uoxftj0k2Mw?sub_confirmation=1)
 
 
 **Prerequisites**
