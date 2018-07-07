@@ -52,7 +52,7 @@ To produce triples using the EthOn Ontology for Blocks:
 
 \# usage: node tripleize.js --data <input-file>  --map <mapping-file> --template <template-file>
 
-% node tripleize.js --data ../data/input/fragments/blocks.csv --map ../map/block.map --template ../templates/block.tmp 
+% node tripleize.js --data ../data/input/fragments/blocks.csv --map ../map/block.map --template ../templates/block.tmp > 
 
 
 % cd ..
@@ -94,6 +94,9 @@ Transaction data
 
 ..and others
 
+The CSV file from the ETC has the following columns:
+
+tx_hash,tx_nonce,tx_block_hash,tx_block_number,tx_index,tx_from,tx_to,tx_value,tx_gas,tx_gas_price,tx_input
 
 _Blank Nodes_
 
