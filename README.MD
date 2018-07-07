@@ -61,7 +61,7 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd tests
 
-./query.sh [sparql.qr]
+\# ./query.sh [sparql.qr]
 
 \# make sure query.sh is executable (chmod u+x)
 
@@ -74,6 +74,9 @@ _Missing Attributes_
 
 These attributes are in the chain data export but were not found in the model:
 
+
+Block data
+
 1. block_total_difficulty 
 2. block_transaction_count
 3. block_miner
@@ -81,6 +84,15 @@ These attributes are in the chain data export but were not found in the model:
 The CSV file from the ETC has the following columns:
 
 block_number,block_hash,block_parent_hash,block_nonce,block_sha3_uncles,block_logs_bloom,block_transactions_root,block_state_root,block_miner,block_difficulty,block_total_difficulty,block_size,block_extra_data,block_gas_limit,block_gas_used,block_timestamp,block_transaction_count
+
+Transaction data
+
+1. tx_from
+2. tx_to
+3. tx_value
+4. tx_block_hash
+
+..and others
 
 
 _Blank Nodes_
