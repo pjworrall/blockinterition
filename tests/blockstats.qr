@@ -1,4 +1,4 @@
-prefix e: <http://ethon.consensys.net/>
+prefix ethon: <http://ethon.consensys.net/>
 
 prefix ibb: <http://knowledge.interition.net/ethereum/mainnet/block#>
 prefix ibs: <http://knowledge.interition.net/ethereum/mainnet/uncle#>
@@ -9,9 +9,9 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?block  ?number ?parentBlock
 WHERE {
-  ?block e:number ?number ;
-            e:blockHash ?blockHash ;
-            e:hasParentBlock ?parentBlock .
+  ?block ethon:number ?number ;
+            ethon:blockHash ?blockHash ;
+            ethon:hasParentBlock ?parentBlock .
 
 }
 LIMIT 25
