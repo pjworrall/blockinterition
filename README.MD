@@ -2,6 +2,29 @@
 
 The main objective here is to get some SPARQL queries that help to understand a distributed applications implementation on the Ethereum blockchain and make it possible to link it with off chain concepts for an end-to-end view.
 
+Example:
+
+```
+   prefix ethon: <http://ethon.consensys.net/>
+   
+   prefix ibb: <http://knowledge.interition.net/ethereum/mainnet/block#>
+   prefix ibs: <http://knowledge.interition.net/ethereum/mainnet/uncle#>
+   prefix ibu: <http://knowledge.interition.net/ethereum/mainnet/state#>
+   prefix ibtx: <http://knowledge.interition.net/ethereum/mainnet/block_tx_root#>
+   
+   prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+   
+   SELECT ?block  ?number ?parentBlock
+   WHERE {
+     ?block ethon:number ?number ;
+               ethon:blockHash ?blockHash ;
+               ethon:hasParentBlock ?parentBlock .
+   
+   }
+   LIMIT 25
+   ```
+
+
 **Documentation**
 
 Go and subscribe to the [Interition Youtube channel](https://www.youtube.com/user/interition?sub_confirmation=1) to get regular instructional material
