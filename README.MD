@@ -98,9 +98,14 @@ Declare the prefix's at the top of the ttl output file, like:
 
 
 @prefix e: <http://ethon.consensys.net/> .
+
 @prefix ibb: <http://knowledge.interition.net/ethereum/mainnet/block#> .
+
 @prefix ibs: <http://knowledge.interition.net/ethereum/mainnet/uncle#> .
+
 @prefix ibu: <http://knowledge.interition.net/ethereum/mainnet/state#> .
+
 @prefix ibtx: <http://knowledge.interition.net/ethereum/mainnet/block_tx_root#> .
+
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
