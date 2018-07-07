@@ -26,6 +26,7 @@ Apache Jena 3.7.0 [ARQ](https://jena.apache.org/)
 To produce triples using the EthOn Ontology for Blocks:
 
 % cd scripts
+
 % node blocks.js
 
 \# Output goes to standard out (redirect it to  data/output/blocks.ttl)
