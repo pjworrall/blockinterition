@@ -50,7 +50,7 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd scripts
 
-\# usage: node tripleize.js --data <input-file>  --map <mapping-file> --template <template-file>
+\# usage: node tripleize.js --data \<input-file\>  --map \<mapping-file\> --template \<template-file\>
 
 % node tripleize.js --data ../data/input/fragments/blocks.csv --map ../map/block.map --template ../templates/block.tmp > 
 
@@ -119,6 +119,8 @@ https://github.com/medvedev1088/ethereum-etl
 
 Git is ignoring the data folder where the input files need to be. Too big to be checking into git.
 The location of the chaindata CSV files from the exports is crudely hard coded in the Javascript files.
+
+Smaller csv extracts are checked into data/input/fragments so the scripts and queries can be operated without having to setup an Ethereum node and produce the data yourself. 
 
 **Todo's**
 
