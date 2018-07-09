@@ -3,7 +3,7 @@ ibb:{{tx_block_number}} ethon:containsTx tx:{{tx_hash}} .
 
 tx:{{tx_hash}} ethon:cumulativeGasUsed "{{tx_gas}}"^^xsd:integer .
 
-tx:{{tx_hash}} ethon:txHash   "{{tx_hash}}"^^xsd:integer .
+tx:{{tx_hash}} ethon:txHash   "{{tx_hash}}"^^xsd:hexBinary .
 
 tx:{{tx_hash}} ethon:txNonce  "{{tx_nonce}}"^^xsd:integer .
 

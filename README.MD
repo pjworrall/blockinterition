@@ -2,7 +2,9 @@
 
 The main objective here is to get some SPARQL queries that help to understand a distributed applications implementation on the Ethereum blockchain and make it possible to link it with off chain concepts for an end-to-end view.
 
-Example:
+Examples:
+
+***Query blocks and their parent blocks***
 
 ```
    prefix ethon: <http://ethon.consensys.net/>
@@ -24,6 +26,31 @@ Example:
    LIMIT 25
    ```
 
+***Query blocks and their transaction gas info***
+```
+prefix ethon: <http://ethon.consensys.net/>
+
+prefix ibb: <http://knowledge.interition.net/ethereum/mainnet/block#>
+prefix ibs: <http://knowledge.interition.net/ethereum/mainnet/uncle#>
+prefix ibu: <http://knowledge.interition.net/ethereum/mainnet/state#>
+prefix ibtx: <http://knowledge.interition.net/ethereum/mainnet/block_tx_root#>
+
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?block ?txHash ?totalGas ?gasUsed ?gasPrice
+WHERE {
+  ?block a ethon:Block  .
+
+  ?block ethon:containsTx ?transaction .
+  ?transaction ethon:cumulativeGasUsed ?totalGas ;
+                ethon:txGasUsed ?gasUsed ;
+                ethon:txGasPrice ?gasPrice ;
+                ethon:txHash ?txHash .
+
+}
+LIMIT 25
+
+```
 
 **Documentation**
 
