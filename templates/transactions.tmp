@@ -1,19 +1,17 @@
 
-ibb:{{tx_block_number}} :containsTx tx:{{tx_hash}} .
+ibb:{{tx_block_number}} ethon:containsTx tx:{{tx_hash}} .
 
-tx:{{tx_hash}} :txIndex {{tx_index}}^^xsd:hexBinary .
+tx:{{tx_hash}} ethon:cumulativeGasUsed "{{tx_gas}}"^^xsd:integer .
 
-tx:{{tx_hash}} :cumulativeGasUsed {{tx_gas}}^^xsd:integer .
+tx:{{tx_hash}} ethon:txHash   "{{tx_hash}}"^^xsd:integer .
 
-tx:{{tx_hash}} :txHash   {{tx_hash}}^^xsd:integer .
+tx:{{tx_hash}} ethon:txNonce  "{{tx_nonce}}"^^xsd:integer .
 
-tx:{{tx_hash}} :txNonce  {{tx_nonce}}^^xsd:integer .
+tx:{{tx_hash}} ethon:txIndex "{{tx_index}}"^^xsd:integer .
 
-tx:{{tx_hash}} :txIndex {{tx_index}}^^xsd:integer .
+tx:{{tx_hash}} ethon:txGasPrice  "{{tx_gas_price}}"^^xsd:integer .
 
-tx:{{tx_hash}} :txGasPrice  {{tx_gas_price}}^^xsd:integer .
-
-tx:{{tx_hash}} :txGasUsed  {{tx_gas}}^^xsd:integer .
+tx:{{tx_hash}} ethon:txGasUsed  "{{tx_gas}}"^^xsd:integer .
 
 
 

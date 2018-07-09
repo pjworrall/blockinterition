@@ -1,6 +1,9 @@
+const transform = require('../lib/transforms.js');
+
+
 module.exports = function(data) {
         return {
-            tx_hash: data[0][0],
+            tx_hash:  transform.remove0x(data[0][0]),
             tx_nonce: data[0][1],
             tx_block_hash: data[0][2],
             tx_block_number: data[0][3],
@@ -12,5 +15,5 @@ module.exports = function(data) {
             tx_gas_price: data[0][9],
             tx_input: data[0][10],
         };
-       }
+       };
 

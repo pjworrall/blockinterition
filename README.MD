@@ -61,11 +61,7 @@ To produce triples using the EthOn Ontology for Blocks:
 
 % cd tests
 
-\# ./query.sh [sparql.qr]
-
-\# make sure query.sh is executable (chmod u+x)
-
-% ./query.sh blocks.qr
+% arq --data=../data/output/blocks.ttl blocks.qr
 
 
 **Issues**
